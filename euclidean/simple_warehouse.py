@@ -5,11 +5,19 @@ import math as m
 import matplotlib.pyplot as plt
 import os
 
+
+def euclidean_distance(x1, y1, x2, y2):
+    return m.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
+
+
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
 wh_cordinates_f = pd.read_csv(os.path.join(script_dir, "..\\data\\wh_coords_OP.csv"))
 orders_f = pd.read_csv(os.path.join(script_dir, "..\\data\\orders.csv"))
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 
 # # Variables
 X = wh_cordinates_f["x"].values
